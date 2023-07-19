@@ -30,6 +30,14 @@ export default
             meta:{
                 title:'Computed'
             }
+        },
+        {
+            path:'/4watch',
+            name:'4watch',
+            component:()=>import('@/views/home/4watch.vue'),
+            meta:{
+                title:'Watch&WatchEffect'
+            }
         }
     ]
     }

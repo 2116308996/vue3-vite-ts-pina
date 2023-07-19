@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+import router from '@/router'
 import viewcode1 from '@/views/home/2hello/2hello-1.vue?raw'
 import viewcode2 from '@/views/home/2hello/2hello-2.vue?raw'
 import view1 from '@/views/home/2hello/2hello-1.vue'
@@ -7,7 +8,7 @@ import view2 from '@/views/home/2hello/2hello-2.vue'
 </script>
 <template>
     <div style="padding: 5px;">
-        <text1-head>reactive&Ref</text1-head>
+        <text1-head>{{router.router.currentRoute.value.meta.title}}</text1-head>
         <text2-head>基础用法</text2-head>
         <p>ref支持所有的类型,reactive支持引用类型 Array Object Map set</p>
         <p>ref取值赋值要加.value,reactive不需要</p>

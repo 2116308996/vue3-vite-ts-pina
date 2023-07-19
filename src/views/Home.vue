@@ -36,7 +36,7 @@ function handleSelect(key: any, keyPath: any) {
     // console.log(key, keyPath)
 }
 function gorouter(child: any) {
-    console.log(child)
+    //console.log(child)
     router.router.push({
         path:child.path
     })

@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+import router from '@/router'
 import view1 from '@/views/home/3computeds/3computeds-1.vue'
 import view2 from '@/views/home/3computeds/3computeds-2.vue'
 import viewcode1 from '@/views/home/3computeds/3computeds-1.vue?raw'
@@ -7,7 +8,7 @@ import viewcode2 from '@/views/home/3computeds/3computeds-2.vue?raw'
 </script>
 <template>
   <div style="padding:5px">
-    <text1-head>Computed</text1-head>
+    <text1-head>{{router.router.currentRoute.value.meta.title}}</text1-head>
     <text2-head>基础用法</text2-head>
     <text-main>
       <template v-slot:a>

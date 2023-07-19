@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+import router from '@/router'
 import viewcode1 from '@/views/home/1hello/1hello-1.vue?raw'
 import viewcode2 from '@/views/home/1hello/1hello-2.vue?raw'
 import view1 from '@/views/home/1hello/1hello-1.vue'
@@ -6,7 +7,7 @@ import view2 from '@/views/home/1hello/1hello-2.vue'
 </script>
 <template>
   <div style="padding: 5px;">
-    <text1-head>vue3指令</text1-head>
+    <text1-head>{{router.router.currentRoute.value.meta.title}}</text1-head>
     <text2-head>创建项目</text2-head>
     <div class="title">
       <p>vue3创建项目 vue creat projectname</p>
