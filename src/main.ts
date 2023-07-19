@@ -13,13 +13,13 @@ import 'element-plus/dist/index.css'
 import Text1Head from '@/components/Form/Text1Head.vue'
 import Text2Head from '@/components/Form/Text2Head.vue'
 import TextMain from '@/components/Form/TextMain.vue'
-import PreviewCode from './components/PreviewCode.vue';
+import ViewCode from '@/components/Form/ViewCode.vue';
 const app = createApp(App)
 
 app.component('Text1Head',Text1Head)
 app.component('Text2Head',Text2Head)
 app.component('TextMain',TextMain)
-app.component('PreviewCode',PreviewCode)
+app.component('ViewCode',ViewCode)
 
 app.use(TDesign);
 app.use(ElementPlus)

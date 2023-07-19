@@ -49,7 +49,7 @@ function changename() {
                 </form>
             </template>
             <template v-slot:b>
-                <PreviewCode :code="view1"></PreviewCode>
+                <view-code :code="view1"></view-code>
             </template>
         </text-main>
 
@@ -62,7 +62,7 @@ function changename() {
               <el-button @click="method.submit2">输出</el-button>
            </template>
            <template v-slot:b>
-             <PreviewCode :code="view2"></PreviewCode>
+             <view-code :code="view2"></view-code>
            </template>
         </text-main>
        

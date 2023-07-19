@@ -1,9 +1,6 @@
 <script setup lang='ts'>
-import { ref, isRef, shallowRef, onMounted, computed } from 'vue'
+import { onMounted, computed } from 'vue'
 import Prism from "prismjs";
-const data = ref({
-
-})
 const props = defineProps({
     code: {
         type: String,

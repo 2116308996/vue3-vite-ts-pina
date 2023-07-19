@@ -45,7 +45,7 @@ function gorouter(child: any) {
 <template>
     <div style="width: 100%;">
         <el-row>
-            <el-col :span="4"></el-col>
+            <el-col :span="2"></el-col>
             <el-col :span="4">
                 <h2>菜单</h2>
                 <el-menu :default-active="data.activeIndex" class="el-menu-vertical-demo" @select="handleSelect"
@@ -67,7 +67,7 @@ function gorouter(child: any) {
             <el-col :span="12">
                 <RouterView />
             </el-col>
-            <el-col :span="4"></el-col>
+            <el-col :span="6"></el-col>
         </el-row>
     </div>
 </template>
