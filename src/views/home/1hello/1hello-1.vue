@@ -8,6 +8,6 @@
 import { onMounted, ref } from 'vue';
 const data = ref({
     a: 'click',//dbclcik
-    b: '<a style="color: red; font- size: 40px">ccc</a>',
+    b: '<a style="color: red; font-size: 40px">ccc</a>',
 })
 </script>

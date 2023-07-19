@@ -1,31 +1,8 @@
 <script setup lang='ts'>
-import { onMounted, ref } from 'vue';
-import router from '@/router'
-import view1 from '@/views/home/1hello/1hello-1.vue?raw'
-import view2 from '@/views/home/1hello/1hello-2.vue?raw'
-onMounted(() => {
-  console.log(router.router.getRoutes().map(v => ({ path: v.path, name: v.name, meta: v.meta, component: v.components })))
-  console.log(router.router.getRoutes())
-  console.log(view1)
-})
-const data = ref({
-  a: "click",//dbclcik
-  b: '<a style="color:red;font-size:40px">ccc</a>',
-  c: [1, 2, 3],
-  form: null
-})
-//v-once  ==  v-memo="[]"
-const c: string = "sadasd"
-const arr: number[] = [1, 2, 3]
-function click() {
-  console.log("aaa")
-  data.value.a = "张三"
-  data.value.c[0] = 100
-  data.value.c[1] = 100
-}
-function parent() {
-  console.log("我是父级")
-}
+import viewcode1 from '@/views/home/1hello/1hello-1.vue?raw'
+import viewcode2 from '@/views/home/1hello/1hello-2.vue?raw'
+import view1 from '@/views/home/1hello/1hello-1.vue'
+import view2 from '@/views/home/1hello/1hello-2.vue'
 </script>
 <template>
   <div style="padding: 5px;">
@@ -39,27 +16,20 @@ function parent() {
     <text2-head>v-text&v-title</text2-head>
     <text-main>
       <template v-slot:a>
-        <div v-text="data.a">
-        </div>
-        <div v-html="data.b">
-        </div>
+        <view1></view1>
       </template>
       <template v-slot:b>
-        <view-code :code="view1"></view-code>
+        <view-code :code="viewcode1"></view-code>
       </template>
     </text-main>
 
     <text2-head>v-once&v-memo</text2-head>
     <text-main>
       <template v-slot:a>
-        <div v-once>{{ data.a }}</div>
-        <div v-for="item in data.c" v-memo="[item == 1]">{{ item }}</div>
-        <div v-on:click="parent">
-          <el-button @[data.a].stop="click">点击</el-button>
-        </div>
+        <view2></view2>
       </template>
       <template v-slot:b>
-        <view-code :code="view2"></view-code>
+        <view-code :code="viewcode2"></view-code>
       </template>
     </text-main>
 

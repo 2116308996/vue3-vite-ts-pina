@@ -47,7 +47,7 @@ function gorouter(child: any) {
         <el-row>
             <el-col :span="2"></el-col>
             <el-col :span="4">
-                <h2>菜单</h2>
+                <h2>VUE3-VITE-TS-PINA</h2>
                 <el-menu :default-active="data.activeIndex" class="el-menu-vertical-demo" @select="handleSelect"
                     @open="handleOpen" @close="handleClose">
                     <template v-for="item, index in data.router">

@@ -16,7 +16,7 @@ function parent() {
 </script>
 <template>
     <div v-once>{{ data.a }}</div>
-    <div v-for="item in data.c" v-memo="[item == 1]">{{ 'item' }}</div>
+    <div v-for="item in data.c" v-memo="[item == 1]">{{ item }}</div>
     <div v-on:click="parent">
         <el-button @[data.a].stop="click">点击</el-button>
     </div>

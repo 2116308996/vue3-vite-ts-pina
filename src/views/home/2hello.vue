@@ -1,34 +1,9 @@
 <script setup lang='ts'>
-import { onMounted, ref, reactive,readonly,shallowReactive,toRef,toRefs,toRaw } from 'vue';
-import view1 from '@/views/home/2hello/2hello-1.vue?raw'
-import view2 from '@/views/home/2hello/2hello-2.vue?raw'
-type M = {
-    name: String,
-    age:Number
-}
-const form = reactive({
-    name: "reactive",
-    age: 22
-})
-const data = ref<M>({
-    name: "ref",
-    age:22
-})
-const name2=toRef(form,'name')
-const {name,age}=toRefs(form)
-const obj=reactive({name:"readonly"})
-const read=readonly(obj)
-const method = {
-    submit: () => {
-        console.log(form.name, data.value.name,read.name)
-    },
-    submit2:()=>{
-        console.log(name2.value,form)
-    }
-}
-function changename() {
-    data.value.name = "修改名称"
-}
+import viewcode1 from '@/views/home/2hello/2hello-1.vue?raw'
+import viewcode2 from '@/views/home/2hello/2hello-2.vue?raw'
+import view1 from '@/views/home/2hello/2hello-1.vue'
+import view2 from '@/views/home/2hello/2hello-2.vue'
+
 </script>
 <template>
     <div style="padding: 5px;">
@@ -40,16 +15,10 @@ function changename() {
         <p>shallowReactive定义的对象浅层数据为响应式,深层数据不是响应式的</p>
         <text-main>
             <template v-slot:a>
-                <form>
-                    <el-input v-model="form.name"></el-input>
-                    <el-input v-model="data.name"></el-input>
-                    <el-input v-model="obj.name"></el-input>
-                    <el-input v-model="read.name"></el-input>
-                    <el-button @click="method.submit">输出</el-button>
-                </form>
+                <view1></view1>
             </template>
             <template v-slot:b>
-                <view-code :code="view1"></view-code>
+                <view-code :code="viewcode1"></view-code>
             </template>
         </text-main>
 
@@ -58,11 +27,10 @@ function changename() {
         <p>toraw解构属性:将响应式(reactive)对象中的某个属性单独提供给外部使用,解构出来的数据改变,原数据不会被改变</p>
         <text-main>
            <template v-slot:a>
-              <el-input v-model="name2"></el-input>
-              <el-button @click="method.submit2">输出</el-button>
+              <view2></view2>
            </template>
            <template v-slot:b>
-             <view-code :code="view2"></view-code>
+             <view-code :code="viewcode2"></view-code>
            </template>
         </text-main>
        
