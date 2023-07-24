@@ -12,9 +12,19 @@ import viewcode3 from '@/views/home/5component/5component-3.vue?raw'
 import view4 from '@/views/home/5component/5component-4.vue'
 import viewcode4 from '@/views/home/5component/5component-4.vue?raw'
 import viewcode5 from '@/views/home/5component/5component-5.vue?raw'
+import view6 from '@/views/home/5component/5component-6.vue'
+import viewcode6 from '@/views/home/5component/5component-6.vue?raw'
+import Skeleton from '@/views/home/5component/Skeleton.vue?raw';
+import SyncVue from '@/views/home/5component/SyncVue.vue?raw';
+import view7 from '@/views/home/5component/5component-7.vue'
+import viewcode7 from '@/views/home/5component/5component-7.vue?raw'
+import view8 from '@/views/home/5component/5component-8.vue'
+import viewcode8 from '@/views/home/5component/5component-8.vue?raw'
+import view9 from '@/views/home/5component/5component-9.vue'
+import viewcode9 from '@/views/home/5component/5component-9.vue?raw'
 </script>
 <template>
-  <div style="padding: 5px;">
+  <div style="padding: 5px;" id="headbox">
     <text1-head :text="router.router.currentRoute.value.meta.title"></text1-head>
     <text2-head text="父子组件通信"></text2-head>
     <text-main>
@@ -68,13 +78,58 @@ import viewcode5 from '@/views/home/5component/5component-5.vue?raw'
     <text2-head text="异步组件"></text2-head>
     <text-main>
       <template #a>
-         aa
+         <view6></view6>
       </template>
       <template #b>
-        bb
+        父组件
+        <view-code :code="viewcode6"></view-code>
+        子组件Skeleton.vue
+        <view-code :code="Skeleton"></view-code>
+        子组件SyncVue.vue
+        <view-code :code="SyncVue"></view-code>
+      </template>
+    </text-main>
+
+    <text2-head text="传送组件"></text2-head>
+    <text-main>
+      <template #a>
+        <view7></view7>
+      </template>
+      <template #b>
+        父组件
+        <view-code :code="viewcode7"></view-code>
+        子组件
+        <view-code :code="viewcode6"></view-code>
+      </template>
+    </text-main>
+
+    <text2-head text="缓存组件"></text2-head>
+    <div><a href="https://blog.csdn.net/weixin_44685906/article/details/124547681" target="_blank">v-show,v-if,keep-alive的区别</a></div>
+    <div><a href="https://blog.csdn.net/m0_45070460/article/details/107432685" target="_blank">keep-alive详解</a></div>
+    <div>使用keep-alive会新增onActivated与onDeactivated两个生命周期</div>
+    <text-main>
+      <template #a>
+        <view8></view8>
+      </template>
+      <template #b>
+        <view-code :code="viewcode8"></view-code>
+      </template>
+    </text-main>
+
+    <text2-head text="transition组件基础用法"></text2-head>
+    <text-main>
+      <template #a>
+        <view9></view9>
+      </template>
+      <template #b>
+        父组件
+        <view-code :code="viewcode9"></view-code>
       </template>
     </text-main>
   </div>
 </template>
 <style scoped lang='less'>
+#headbox{
+  position: relative;
+}
 </style>

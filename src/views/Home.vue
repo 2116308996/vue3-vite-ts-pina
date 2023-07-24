@@ -89,7 +89,7 @@ onMounted(() => {
                 </div>
             </div>
             <div class="box right">
-                <el-tabs tab-position="left" style="height: 200px" class="demo-tabs" @tab-change="handleClick">
+                <el-tabs tab-position="left" class="demo-tabs" @tab-change="handleClick">
                     <el-tab-pane v-for="item, index in data.texts" :label="item">
                     </el-tab-pane>
                 </el-tabs>
@@ -104,11 +104,11 @@ onMounted(() => {
 }
 
 .left {
-    width: 450px;
+    width: 20%;
 }
 
 .center {
-    width: calc(100vw - 450px - 20px);
+    width: calc(100vw - 20% - 20px);
     height: calc(100vh - 20px);
     margin-left: 20px;
 }
@@ -119,7 +119,7 @@ onMounted(() => {
 
 .right {
     padding-left: 20px;
-    width: 450px;
+    width: 20%;
     position: absolute;
     right: 0px;
 }
