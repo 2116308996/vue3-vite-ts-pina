@@ -33,7 +33,9 @@ import view2 from '@/views/home/1hello/1hello-2.vue'
         <view-code :code="viewcode2"></view-code>
       </template>
     </text-main>
-
+    
+    <text2-head>生命周期</text2-head>
+    <a href="https://blog.csdn.net/m0_57341617/article/details/126426931" target="_blank">https://blog.csdn.net/m0_57341617/article/details/126426931</a>
   </div>
 </template>
 <style scoped lang="less">

@@ -38,6 +38,14 @@ export default
             meta:{
                 title:'Watch&WatchEffect'
             }
+        },
+        {
+            path:"/5component",
+            name:'5component',
+            component:()=>import('@/views/home/5component.vue'),
+            meta:{
+                title:'组件'
+            }
         }
     ]
     }
