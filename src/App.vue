@@ -30,8 +30,7 @@ import Home from './views/Home.vue';
 
 <style scoped>
 body{
-  display: none !important;;
-
+  display: none !important;
 }
 /* header {
   line-height: 1.5;

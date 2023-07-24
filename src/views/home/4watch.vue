@@ -11,8 +11,8 @@ onMounted(()=>{
 </script>
 <template>
   <div style="padding: 5px;">
-    <text1-head>{{router.router.currentRoute.value.meta.title}}</text1-head>
-    <text2-head>Watch</text2-head>
+    <text1-head  :text="router.router.currentRoute.value.meta.title"></text1-head>
+    <text2-head  text="Watch"></text2-head>
     <text-main>
       <template v-slot:a>
         <view1></view1>
@@ -22,7 +22,7 @@ onMounted(()=>{
       </template> 
     </text-main>
 
-    <text2-head>WatchEffect</text2-head>
+    <text2-head  text="WatchEffect"></text2-head>
     <text-main>
       <template v-slot:a>
         <view2></view2>

@@ -15,8 +15,8 @@ import viewcode5 from '@/views/home/5component/5component-5.vue?raw'
 </script>
 <template>
   <div style="padding: 5px;">
-    <text1-head>{{ router.router.currentRoute.value.meta.title }}</text1-head>
-    <text2-head>父子组件通信</text2-head>
+    <text1-head :text="router.router.currentRoute.value.meta.title"></text1-head>
+    <text2-head text="父子组件通信"></text2-head>
     <text-main>
         <template v-slot:a>
            <view1></view1>
@@ -29,7 +29,7 @@ import viewcode5 from '@/views/home/5component/5component-5.vue?raw'
         </template>
     </text-main>
     
-    <text2-head>递归组件</text2-head>
+    <text2-head text="递归组件"></text2-head>
     <text-main>
       <template v-slot:a>
         <tree1></tree1>
@@ -42,7 +42,7 @@ import viewcode5 from '@/views/home/5component/5component-5.vue?raw'
       </template>
     </text-main>
 
-    <text2-head>动态组件</text2-head>
+    <text2-head text="动态组件"></text2-head>
     <text-main>
       <template v-slot:a>
         <view3></view3>
@@ -52,7 +52,7 @@ import viewcode5 from '@/views/home/5component/5component-5.vue?raw'
       </template>
     </text-main>
 
-    <text2-head>插槽</text2-head>
+    <text2-head text="插槽"></text2-head>
     <text-main>
       <template v-slot:a>
         <view4></view4>
@@ -64,8 +64,17 @@ import viewcode5 from '@/views/home/5component/5component-5.vue?raw'
         <view-code :code="viewcode5"></view-code>
       </template>
     </text-main>
+
+    <text2-head text="异步组件"></text2-head>
+    <text-main>
+      <template #a>
+         aa
+      </template>
+      <template #b>
+        bb
+      </template>
+    </text-main>
   </div>
 </template>
 <style scoped lang='less'>
-
 </style>

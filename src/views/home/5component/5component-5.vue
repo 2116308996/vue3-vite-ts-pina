@@ -1,22 +1,30 @@
 <script setup lang='ts'>
-import { ref,isRef,shallowRef,onMounted } from 'vue'
-const data = ref({
+import { ref } from 'vue'
+const data = ref([{
+  name:'aaaa'
+},
+{
+  name:'bbbb'
+},
+{
+  name:'cccc'
+}])
 
-})
-onMounted(() => {
-
-})
 </script>
 <template>
   <div>
     zzzzzzzzzzzzzzzzzz
-    <slot name="a"></slot>
+    <div>
+      <slot name="a"></slot>
+    </div>
     zzzzzzzzzzzzzzzzzz
-    <slot index="index"></slot>
+    <div v-for="item, index in data">
+      <slot :index="index" :data="item"></slot>
+    </div>
     zzzzzzzzzzzzzzzzzz
-    <slot name="b"></slot>
+    <div>
+      <slot name="b"></slot>
+    </div>
   </div>
 </template>
-<style scoped lang='less'>
-
-</style>
+<style scoped lang='less'></style>

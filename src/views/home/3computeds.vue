@@ -8,8 +8,8 @@ import viewcode2 from '@/views/home/3computeds/3computeds-2.vue?raw'
 </script>
 <template>
   <div style="padding:5px">
-    <text1-head>{{router.router.currentRoute.value.meta.title}}</text1-head>
-    <text2-head>基础用法</text2-head>
+    <text1-head  :text="router.router.currentRoute.value.meta.title"></text1-head>
+    <text2-head  text="基础用法"></text2-head>
     <text-main>
       <template v-slot:a>
         <view1></view1>
@@ -19,7 +19,7 @@ import viewcode2 from '@/views/home/3computeds/3computeds-2.vue?raw'
       </template>
     </text-main>
 
-    <text2-head>案例</text2-head>
+    <text2-head  text="案例"></text2-head>
     <text-main>
       <template v-slot:a>
         <view2></view2>

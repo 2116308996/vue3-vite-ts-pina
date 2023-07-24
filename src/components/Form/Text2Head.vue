@@ -1,16 +1,14 @@
 <script setup lang='ts'>
-// const props=defineProps({
-//     text:{
-//         type:String,
-//         default:""
-//     }
-// })
+const props=defineProps({
+    text:{
+        type:String,
+        default:""
+    }
+})
 </script>
 <template>
-  <div class="text2">
-    <slot>
-      
-    </slot>
+  <div class="text2" :id="props.text">
+      {{ props.text }}
   </div>
 </template>
 <style scoped>
