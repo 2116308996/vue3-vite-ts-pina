@@ -47,10 +47,8 @@ function handleSelect(key: any, keyPath: any) {
 }
 const handleClick = (tab: any) => {
     window.location.hash = data.value.texts[tab]
-    console.log(tab)
 }
 function gorouter(child: any) {
-    console.log(child)
     data.value.numName = child.name
     funtexts()
     router.router.push({

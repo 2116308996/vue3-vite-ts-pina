@@ -22,6 +22,8 @@ import view8 from '@/views/home/5component/5component-8.vue'
 import viewcode8 from '@/views/home/5component/5component-8.vue?raw'
 import view9 from '@/views/home/5component/5component-9.vue'
 import viewcode9 from '@/views/home/5component/5component-9.vue?raw'
+import view10 from '@/views/home/5component/5component-10.vue'
+import viewcode10 from '@/views/home/5component/5component-10.vue?raw'
 </script>
 <template>
   <div style="padding: 5px;" id="headbox">
@@ -116,14 +118,16 @@ import viewcode9 from '@/views/home/5component/5component-9.vue?raw'
       </template>
     </text-main>
 
-    <text2-head text="transition组件基础用法"></text2-head>
+    <text2-head text="transition动画组件"></text2-head>
+    <div><a href="https://blog.csdn.net/Lyrelion/article/details/125852648" target="_blank">Transition生命周期</a></div>
     <text-main>
       <template #a>
         <view9></view9>
+        <view10></view10>
       </template>
       <template #b>
-        父组件
         <view-code :code="viewcode9"></view-code>
+        <view-code :code="viewcode10"></view-code>
       </template>
     </text-main>
   </div>

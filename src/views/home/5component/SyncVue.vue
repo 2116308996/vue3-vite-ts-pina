@@ -10,7 +10,7 @@ const  data:Data = await http.get<Data>('/src/views/home/5component/data.json')
     {{ data.name }}
   </div>
   <div>
-    <img class="b" src="/src/assets/ikun.jpg">
+    <img class="b" src="/public/image/ikun.jpg">
   </div>
 </template>
 <style scoped lang='less'>
