@@ -7,7 +7,7 @@ export const http={
                 if(xhr.readyState==4&&xhr.status==200){
                     setTimeout(() => {
                         reslove(JSON.parse(xhr.responseText))
-                    }, 1000);
+                    }, 2000);
                 }
             }
             xhr.send(null)

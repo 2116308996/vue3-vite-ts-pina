@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import util from '@/util/util';
 const data = ref({
     activeIndex: "1",
-    numName: window.location.href.split('/')[window.location.href.split('/').length - 1],
+    numName:window.location.href.split('/')[window.location.href.split('/').length - 1].split('#')[0],
     texts: [''],
     router: [{
         path: String(),
@@ -25,6 +25,7 @@ const data = ref({
         }]
     }]
 })
+
 onMounted(() => {
     data.value.router = router.asyncRoutes
 })
@@ -68,13 +69,13 @@ onMounted(() => {
                     <h2>VUE3-VITE-TS-PINA</h2>
                     <el-menu :default-active="data.activeIndex" class="el-menu-vertical-demo" @select="handleSelect"
                         @open="handleOpen" @close="handleClose">
-                        <template v-for="item, index in data.router">
+                        <template v-for="item,index in data.router">
                             <el-sub-menu :index="index + 1">
                                 <template #title>
                                     <i class="el-icon-location"></i>
                                     <span>{{ item.meta.title }}</span>
                                 </template>
-                                <template v-for="child, childindex in item.children">
+                                <template v-for="child,childindex in item.children">
                                     <el-menu-item @click="gorouter(child)" :index="index + 1 + '-' + (childindex + 1)">{{
                                         child.meta.title }}</el-menu-item>
                                 </template>
