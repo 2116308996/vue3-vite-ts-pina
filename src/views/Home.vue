@@ -64,7 +64,7 @@ onMounted(() => {
         <el-row>
             <div class="box left">
                 <div style="width: 80%;float: right;">
-                    <h2>VUE3-VITE-TS-PINA</h2>
+                    <h2>VUE3-VITE-TS-PINIA</h2>
                     <el-menu :default-active="data.activeIndex" class="el-menu-vertical-demo" @select="handleSelect"
                         @open="handleOpen" @close="handleClose">
                         <template v-for="item,index in data.router">
