@@ -72,8 +72,15 @@ const move = () => {
     <button @click="flag = !flag">写轮眼</button>
     <div class="div1">
       <!-- :duration="2000" -->
-      <transition @before-enter="beforeenter" @enter="enter" @after-enter="afterenter" @enter-cancelled="entercancell"
-        @before-leave="beforeleave" @leave="leave" @after-leave="afterleave" @leave-cancelled="leavecancel">
+      <transition 
+      @before-enter="beforeenter" 
+      @enter="enter" 
+      @after-enter="afterenter" 
+      @enter-cancelled="entercancell"
+      @before-leave="beforeleave" 
+      @leave="leave"
+      @after-leave="afterleave" 
+      @leave-cancelled="leavecancel">
         <div v-if="flag" class="box"></div>
       </transition>
     </div>
