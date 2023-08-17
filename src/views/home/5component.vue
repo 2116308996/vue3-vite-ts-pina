@@ -24,6 +24,16 @@ import view9 from '@/views/home/5component/5component-9.vue'
 import viewcode9 from '@/views/home/5component/5component-9.vue?raw'
 import view10 from '@/views/home/5component/5component-10.vue'
 import viewcode10 from '@/views/home/5component/5component-10.vue?raw'
+import view11 from '@/views/home/5component/5component-11.vue'
+import viewcode11 from '@/views/home/5component/5component-11.vue?raw'
+import view12 from '@/views/home/5component/5component-12.vue'
+import viewcode12 from '@/views/home/5component/5component-12.vue?raw'
+import viewcode12a from '@/views/home/5component/5component-12-1.vue?raw'
+import viewcode12b from '@/views/home/5component/5component-12-2.vue?raw'
+import view13 from '@/views/home/5component/5component-13.vue'
+import viewcode13 from '@/views/home/5component/5component-13.vue?raw'
+import viewcode13a from '@/views/home/5component/5component-13-1.vue?raw'
+import viewcode13b from '@/views/home/5component/5component-13-2.vue?raw'
 </script>
 <template>
   <div style="padding: 5px;" id="headbox">
@@ -120,6 +130,7 @@ import viewcode10 from '@/views/home/5component/5component-10.vue?raw'
 
     <text2-head text="transition动画组件"></text2-head>
     <div><a href="https://blog.csdn.net/Lyrelion/article/details/125852648" target="_blank">Transition生命周期</a></div>
+    <div><a href="https://blog.csdn.net/qq_37209594/article/details/124124721" target="_blank">gasp的使用</a></div>
     <text-main>
       <template #a>
         <view9></view9>
@@ -128,6 +139,46 @@ import viewcode10 from '@/views/home/5component/5component-10.vue?raw'
       <template #b>
         <view-code :code="viewcode9"></view-code>
         <view-code :code="viewcode10"></view-code>
+      </template>
+    </text-main>
+
+    <text2-head text="transtion-group"></text2-head>
+    <text-main>
+      <template #a>
+        <view11></view11>
+      </template>
+      <template #b>
+        <view-code :code="viewcode11"></view-code>
+      </template>
+    </text-main>
+
+    <text2-head text="依赖注入provide/inject"></text2-head>
+    <text-main>
+      <template #a>
+        <view12></view12>
+      </template>
+      <template #b>
+        父组件
+        <view-code :code="viewcode12"></view-code>
+        子组件
+        <view-code :code="viewcode12a"></view-code>
+        孙组件
+        <view-code :code="viewcode12b"></view-code>
+      </template>
+    </text-main>
+
+    <text2-head text="兄弟组件传参"></text2-head>
+    <text-main>
+      <template #a>
+        <view13></view13>
+      </template>
+      <template #b>
+        父组件
+        <view-code :code="viewcode13"></view-code>
+        子组件A
+        <view-code :code="viewcode13a"></view-code>
+        子组件B
+        <view-code :code="viewcode13b"></view-code>
       </template>
     </text-main>
   </div>
