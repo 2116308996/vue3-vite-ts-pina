@@ -10,7 +10,7 @@ const change=()=>{
   emit('on-click',data.value)
 }
 const change2=()=>{
-  instance?.proxy?.$bus.emit('on-mitt',data.value)
+ // instance?.proxy?.$bus.emit('on-mitt',data.value)
 }
 onMounted(() => {
 
