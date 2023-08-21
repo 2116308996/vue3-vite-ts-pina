@@ -46,6 +46,14 @@ export default
             meta:{
                 title:'组件'
             }
+        },
+        {
+            path:"/6mitt",
+            name:'6mitt',
+            component:()=>import('@/views/home/6mitt.vue'),
+            meta:{
+                title:'Mitt'
+            }
         }
     ]
     }

@@ -9,6 +9,13 @@ import TDesign from 'tdesign-vue-next';
 import 'tdesign-vue-next/es/style/index.css';
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
+import mitt from 'mitt'
+const Mit=mitt()
+declare module 'vue' {
+    export interface ComponentCustomProperties{
+        $Bus:typeof Mit
+    }
+}
 
 import Text1Head from '@/components/Form/Text1Head.vue'
 import Text2Head from '@/components/Form/Text2Head.vue'
@@ -27,4 +34,5 @@ app.use(createPinia())
 app.use(router.router)
 app.config.globalProperties.$ref=ref
 app.config.globalProperties.$onMounted=onMounted
+app.config.globalProperties.$Bus=Mit
 app.mount('#app')
