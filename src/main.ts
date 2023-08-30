@@ -23,6 +23,8 @@ import TextMain from '@/components/Form/TextMain.vue'
 import ViewCode from '@/components/Form/ViewCode.vue';
 const app = createApp(App)
 
+
+
 app.component('Text1Head',Text1Head)
 app.component('Text2Head',Text2Head)
 app.component('TextMain',TextMain)
@@ -32,7 +34,8 @@ app.use(TDesign);
 app.use(ElementPlus)
 app.use(createPinia())
 app.use(router.router)
+
+app.mount('#app')
 app.config.globalProperties.$ref=ref
 app.config.globalProperties.$onMounted=onMounted
 app.config.globalProperties.$Bus=Mit
-app.mount('#app')

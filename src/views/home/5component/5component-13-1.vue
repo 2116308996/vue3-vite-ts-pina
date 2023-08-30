@@ -1,16 +1,27 @@
 <script setup lang='ts'>
 import { ref,isRef,shallowRef,onMounted } from 'vue'
 import {getCurrentInstance} from 'vue'
-const instance=getCurrentInstance()
+const {proxy}:any=getCurrentInstance()
 const data = ref({
   color:'red'
 })
 const emit=defineEmits(['on-click'])
 const change=()=>{
-  emit('on-click',data.value)
+  if(data.value.color){
+    data.value.color=''
+  }else{
+    data.value.color='red'
+  }
+  emit('on-click',data.value.color)
 }
 const change2=()=>{
- // instance?.proxy?.$bus.emit('on-mitt',data.value)
+  if(data.value.color){
+    data.value.color=''
+  }else{
+    data.value.color='red'
+  }
+  proxy?.$Bus.emit('on-mitt',data.value.color)
+  proxy?.$Bus.emit('on-mitt2',data.value.color)
 }
 onMounted(() => {
 

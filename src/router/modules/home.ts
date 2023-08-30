@@ -48,11 +48,11 @@ export default
             }
         },
         {
-            path:"/6mitt",
-            name:'6mitt',
-            component:()=>import('@/views/home/6mitt.vue'),
+            path:"/6tsx",
+            name:'6tsx',
+            component:()=>import('@/views/home/6tsx.vue'),
             meta:{
-                title:'Mitt'
+                title:'TSX'
             }
         }
     ]

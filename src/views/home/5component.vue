@@ -168,6 +168,7 @@ import viewcode13b from '@/views/home/5component/5component-13-2.vue?raw'
     </text-main>
 
     <text2-head text="兄弟组件传参&&Mitt"></text2-head>
+    <div><span>npm install mitt -S</span></div>
     <text-main>
       <template #a>
         <view13></view13>
