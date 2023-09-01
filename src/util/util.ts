@@ -29,5 +29,10 @@ export default [
         name:'6tsx',
         title:'TSX',
         text:['TSX']
+    },
+    {
+        name:'1v-model',
+        title:'v-model',
+        text:['v-model']
     }
 ]

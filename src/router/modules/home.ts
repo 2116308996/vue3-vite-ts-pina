@@ -4,7 +4,7 @@ export default
         name: '1hello',
         redirect:'/1hello',
         meta:{
-            title:"第一章"
+            title:"Vue3基础框架学习"
         },
         component:() => import('@/views/home/1hello.vue'),
         children:[{
