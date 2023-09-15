@@ -2,10 +2,12 @@
 import router from '@/router';
 import { onMounted, ref, computed } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
+import { useDark, useToggle } from '@vueuse/core'
 import util from '@/util/util';
 const data = ref({
+    switch:false,
     activeIndex: "1",
-    numName:window.location.href.split('/')[window.location.href.split('/').length - 1].split('#')[0],
+    numName: window.location.href.split('/')[window.location.href.split('/').length - 1].split('#')[0],
     texts: [''],
     router: [{
         path: String(),
@@ -25,7 +27,13 @@ const data = ref({
         }]
     }]
 })
-
+const isDark = useDark({
+    selector: 'body',
+   
+    valueDark: 'dark',
+    valueLight: 'light',
+})
+const toggleDark = useToggle(isDark)
 onMounted(() => {
     data.value.router = router.asyncRoutes
 })
@@ -63,17 +71,20 @@ onMounted(() => {
     <div style="width: 100%;margin-top: 8px;">
         <el-row>
             <div class="box left">
+                <div style="display: flex;justify-content: center;">
+                    <el-switch v-model="data.switch" @change="toggleDark()">按钮</el-switch>
+                </div>
                 <div style="width: 80%;float: right;">
                     <h2>VUE3-VITE-TS-PINIA</h2>
                     <el-menu :default-active="data.activeIndex" class="el-menu-vertical-demo" @select="handleSelect"
                         @open="handleOpen" @close="handleClose">
-                        <template v-for="item,index in data.router">
+                        <template v-for="item, index in data.router">
                             <el-sub-menu :index="index + 1">
                                 <template #title>
                                     <i class="el-icon-location"></i>
                                     <span>{{ item.meta.title }}</span>
                                 </template>
-                                <template v-for="child,childindex in item.children">
+                                <template v-for="child, childindex in item.children">
                                     <el-menu-item @click="gorouter(child)" :index="index + 1 + '-' + (childindex + 1)">{{
                                         child.meta.title }}</el-menu-item>
                                 </template>
@@ -146,11 +157,14 @@ onMounted(() => {
     .right {
         width: 0;
     }
-    .center{
+
+    .center {
         width: 100%;
     }
+
     .center-1 {
         width: 90%;
         margin: 0 auto;
     }
-}</style>
+}
+</style>

@@ -33,6 +33,6 @@ export default [
     {
         name:'1v-model',
         title:'v-model',
-        text:['v-model']
+        text:['v-model','指令','图片懒加载']
     }
 ]
