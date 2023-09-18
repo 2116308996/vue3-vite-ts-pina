@@ -116,8 +116,8 @@ import viewcode13b from '@/views/home/5component/5component-13-2.vue?raw'
     </text-main>
 
     <text2-head text="缓存组件"></text2-head>
-    <div><a href="https://blog.csdn.net/weixin_44685906/article/details/124547681" target="_blank">v-show,v-if,keep-alive的区别</a></div>
-    <div><a href="https://blog.csdn.net/m0_45070460/article/details/107432685" target="_blank">keep-alive详解</a></div>
+    <div><a href="https://blog.csdn.net/weixin_44685906/article/details/124547681" style="color: rgb(62, 175, 124);" target="_blank">v-show,v-if,keep-alive的区别</a></div>
+    <div><a href="https://blog.csdn.net/m0_45070460/article/details/107432685" style="color: rgb(62, 175, 124);" target="_blank">keep-alive详解</a></div>
     <div>使用keep-alive会新增onActivated与onDeactivated两个生命周期</div>
     <text-main>
       <template #a>
@@ -129,8 +129,8 @@ import viewcode13b from '@/views/home/5component/5component-13-2.vue?raw'
     </text-main>
 
     <text2-head text="transition动画组件"></text2-head>
-    <div><a href="https://blog.csdn.net/Lyrelion/article/details/125852648" target="_blank">Transition生命周期</a></div>
-    <div><a href="https://blog.csdn.net/qq_37209594/article/details/124124721" target="_blank">gasp的使用</a></div>
+    <div><a href="https://blog.csdn.net/Lyrelion/article/details/125852648" style="color: rgb(62, 175, 124);" target="_blank">Transition生命周期</a></div>
+    <div><a href="https://blog.csdn.net/qq_37209594/article/details/124124721" style="color: rgb(62, 175, 124);" target="_blank">gasp的使用</a></div>
     <text-main>
       <template #a>
         <view9></view9>

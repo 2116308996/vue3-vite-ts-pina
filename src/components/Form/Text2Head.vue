@@ -1,22 +1,39 @@
 <script setup lang='ts'>
+import dark from '@/stores/dark'
+const darkstore=dark()
 const props=defineProps({
     text:{
         type:String,
         default:""
     }
 })
+const aaa = () => {
+  if (darkstore.dark == true) {
+    return 'text2'
+  } else {
+    return 'text1'
+  }
+}
 </script>
 <template>
-  <div class="text2" :id="props.text">
+  <div :class="aaa()" :id="props.text">
       {{ props.text }}
   </div>
 </template>
 <style scoped>
-.text2{
+.text1{
   font-size: 1.65rem;
   font-weight: 600;
   font-family: '微软雅黑';
   color:rgb(96, 98, 102);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.text2{
+  font-size: 1.65rem;
+  font-weight: 600;
+  font-family: '微软雅黑';
+  color:white;
   margin-bottom: 20px;
   margin-top: 20px;
 }

@@ -35,10 +35,10 @@ import view2 from '@/views/home/1hello/1hello-2.vue'
     </text-main>
     
     <text2-head  text="生命周期"></text2-head>
-    <a href="https://blog.csdn.net/m0_57341617/article/details/126426931" target="_blank">https://blog.csdn.net/m0_57341617/article/details/126426931</a>
+    <a href="https://blog.csdn.net/m0_57341617/article/details/126426931" style="color: rgb(62, 175, 124);" target="_blank">https://blog.csdn.net/m0_57341617/article/details/126426931</a>
     
     <text2-head text="JSON字符串与对象之间的转换"></text2-head>
-    <a href="https://blog.csdn.net/MoXinXueWEB/article/details/126942752" target="_blank">https://blog.csdn.net/MoXinXueWEB/article/details/126942752</a>
+    <a href="https://blog.csdn.net/MoXinXueWEB/article/details/126942752" style="color: rgb(62, 175, 124);" target="_blank">https://blog.csdn.net/MoXinXueWEB/article/details/126942752</a>
   
   </div>
 </template>

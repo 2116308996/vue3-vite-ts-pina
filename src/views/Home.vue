@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import router from '@/router';
+import dark from '@/stores/dark'
+const darkstore = dark()
 import { onMounted, ref, computed } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
-import { useDark, useToggle } from '@vueuse/core'
 import util from '@/util/util';
 const data = ref({
-    switch:false,
+    switch: false,
+    colorisdark:'black',
     activeIndex: "1",
     numName: window.location.href.split('/')[window.location.href.split('/').length - 1].split('#')[0],
     texts: [''],
@@ -27,13 +29,14 @@ const data = ref({
         }]
     }]
 })
-const isDark = useDark({
-    selector: 'body',
-   
-    valueDark: 'dark',
-    valueLight: 'light',
-})
-const toggleDark = useToggle(isDark)
+const toggleDark = () => {
+    darkstore.isdark()
+    if(darkstore.dark){
+      data.value.colorisdark='white'
+    }else{
+        data.value.colorisdark='black'
+    }
+}
 onMounted(() => {
     data.value.router = router.asyncRoutes
 })
@@ -63,12 +66,19 @@ function gorouter(child: any) {
         path: child.path
     })
 }
+const isdark = () => {
+    if (darkstore.dark == true) {
+        return 'dark'
+    } else {
+        return 'light'
+    }
+}
 onMounted(() => {
     funtexts()
 })
 </script>
 <template>
-    <div style="width: 100%;margin-top: 8px;">
+    <div style="width: 100%;margin-top: 8px;" :class="isdark()">
         <el-row>
             <div class="box left">
                 <div style="display: flex;justify-content: center;">
@@ -107,7 +117,31 @@ onMounted(() => {
         </el-row>
     </div>
 </template>
+<style lang="less">
+.el-tabs__item {
+    color: v-bind('data.colorisdark') !important;
+    opacity: 1;
+}
+.el-tabs__item:hover {
+    color: rgb(64, 158, 255) !important;
+    opacity: 1;
+}
+.el-tabs__item.is-active{
+    color: rgb(64, 158, 255) !important;
+    opacity: 1;
+}
+</style>
 <style lang="less" scoped>
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
 .box {
     overflow: auto;
 
@@ -166,5 +200,4 @@ onMounted(() => {
         width: 90%;
         margin: 0 auto;
     }
-}
-</style>
+}</style>
