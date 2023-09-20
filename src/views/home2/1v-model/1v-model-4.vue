@@ -1,9 +1,5 @@
 <script setup lang='ts'>
 import { ref, isRef, shallowRef, onMounted } from 'vue'
-//vueuse
-const data = ref({
-
-})
 const props = defineProps({
   widthx: {
     type: String,
@@ -21,9 +17,9 @@ const vMove = (...e: any) => {
   const moveElementmain: HTMLElement = document.querySelector('#main') as HTMLElement
   const widthx = moveElementmain.offsetWidth * parseInt(props.widthx)/100
   const widthy = moveElementmain.offsetWidth * parseInt(props.widthy)/100
-  console.log(widthx,widthy)
-  console.log(moveElementa)
-  console.log(moveElementb)
+  // console.log(widthx,widthy)
+  // console.log(moveElementa)
+  // console.log(moveElementb)
   const mouseDown = (el: MouseEvent) => {
     let x = el.clientX
     let awidth = moveElementa.offsetWidth
