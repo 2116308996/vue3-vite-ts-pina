@@ -78,7 +78,7 @@ onMounted(() => {
       </div>
       <text-main>
         <template #a>
-            <view4>
+            <view4 widthx='10' widthy='40'>
               <template #a>
                 <div style="width: 80%;background-color: violet;margin: 0 auto;">aaaa</div>
               </template>
