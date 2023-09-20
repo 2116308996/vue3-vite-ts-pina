@@ -21,6 +21,9 @@ const vMove = (...e: any) => {
   // console.log(moveElementa)
   // console.log(moveElementb)
   const mouseDown = (el: MouseEvent) => {
+
+    moveElementmain.style.cursor='e-resize'
+
     let x = el.clientX
     let awidth = moveElementa.offsetWidth
     let bwidth = moveElementb.offsetWidth
@@ -33,6 +36,7 @@ const vMove = (...e: any) => {
     }
     document.addEventListener('mousemove', move)
     document.addEventListener('mouseup', () => {
+      moveElementmain.style.cursor='default'
       document.removeEventListener('mousemove', move)
     })
   }
