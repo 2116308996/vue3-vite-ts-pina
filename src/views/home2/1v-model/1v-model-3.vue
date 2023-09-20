@@ -12,7 +12,7 @@ const vLazy:Directive<HTMLImageElement,string>=async (el,bindstring)=>{
     const def=await import('@/assets/logo.svg')
     el.src=def.default
     const observer=new IntersectionObserver((enr)=>{
-        console.log(enr)
+      //  console.log(enr)
         if(enr[0].intersectionRatio>0){
             setTimeout(() => {
                 el.src=bindstring.value

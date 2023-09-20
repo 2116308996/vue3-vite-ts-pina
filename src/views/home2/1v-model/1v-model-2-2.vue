@@ -10,7 +10,7 @@ onMounted(() => {
 defineExpose({
   movefun(){
    let a:HTMLElement= document.getElementById('movebox') as HTMLElement
-   console.log(a?.style.position)
+ //  console.log(a?.style.position)
    if(a?.style.position=='absolute'){
     a.style.position=''
    }else{

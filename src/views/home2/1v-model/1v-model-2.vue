@@ -16,7 +16,7 @@ const vMove = {
 
   },
   mounted(...e: any) {
-    console.log(e)
+    //console.log(e)
     e[0].style.background = e[1].value.background
   },
   beforeUpdate() {
@@ -28,7 +28,7 @@ const vMove = {
 }
 const vMovess = (...e: any) =>{
     let moveElement = e[0]
-    console.log(moveElement)
+//    console.log(moveElement)
     const mouseDown = (el: MouseEvent) => {
       let x = el.clientX - moveElement.offsetLeft
       let y = el.clientY - moveElement.offsetTop

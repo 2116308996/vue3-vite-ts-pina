@@ -8,6 +8,7 @@ import util from '@/util/util';
 const data = ref({
     switch: false,
     colorisdark:'black',
+    backgroundcolorisdark:'white',
     activeIndex: "1",
     numName: window.location.href.split('/')[window.location.href.split('/').length - 1].split('#')[0],
     texts: [''],
@@ -33,8 +34,10 @@ const toggleDark = () => {
     darkstore.isdark()
     if(darkstore.dark){
       data.value.colorisdark='white'
+      data.value.backgroundcolorisdark='black'
     }else{
         data.value.colorisdark='black'
+        data.value.backgroundcolorisdark='white'
     }
 }
 onMounted(() => {
@@ -118,6 +121,14 @@ onMounted(() => {
     </div>
 </template>
 <style lang="less">
+.t-collapse-panel__header{
+    color: v-bind('data.colorisdark') !important;
+    background-color: v-bind('data.backgroundcolorisdark')!important;
+}
+.t-collapse-panel__content{
+    color: v-bind('data.colorisdark') !important;
+    background-color: v-bind('data.backgroundcolorisdark')!important;
+}
 .el-tabs__item {
     color: v-bind('data.colorisdark') !important;
     opacity: 1;
@@ -127,6 +138,23 @@ onMounted(() => {
     opacity: 1;
 }
 .el-tabs__item.is-active{
+    color: rgb(64, 158, 255) !important;
+    opacity: 1;
+}
+.el-menu-item {
+    color: v-bind('data.colorisdark') !important;
+    background-color: v-bind('data.backgroundcolorisdark')!important;
+    opacity: 1;
+}
+.el-menu-item:hover {
+    color: rgb(64, 158, 255) !important;
+    opacity: 1;
+}
+.el-sub-menu__title{
+    color: v-bind('data.colorisdark') !important;
+    background-color: v-bind('data.backgroundcolorisdark')!important;
+}
+.el-menu-item.is-active{
     color: rgb(64, 158, 255) !important;
     opacity: 1;
 }

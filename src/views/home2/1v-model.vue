@@ -10,6 +10,8 @@ import view3 from '@/views/home2/1v-model/1v-model-3.vue'
 import viewcode5 from '@/views/home2/1v-model/1v-model-3.vue?raw'
 import view4 from '@/views/home2/1v-model/1v-model-4.vue'
 import viewcode6 from '@/views/home2/1v-model/1v-model-4.vue?raw'
+import view5 from '@/views/home2/1v-model/1v-model-5.vue'
+import viewcode7 from '@/views/home2/1v-model/1v-model-5.vue?raw'
 const data = ref({
 
 })
@@ -70,18 +72,39 @@ onMounted(() => {
         </template>
       </text-main>
 
+      <text2-head text="分页"></text2-head>
+      <div>
+        <span></span>
+      </div>
+      <text-main>
+        <template #a>
+            <view4>
+              <template #a>
+                <div style="width: 80%;background-color: violet;margin: 0 auto;">aaaa</div>
+              </template>
+              <template #b>
+                <div style="width: 80%;background-color:blue;margin: 0 auto;">bbbb</div>
+              </template>
+            </view4>
+        </template>
+        <template #b>
+            <view-code :code="viewcode6"></view-code>
+        </template>
+      </text-main>
+
       <text2-head text="自定义hooks"></text2-head>
       <div>
         <span></span>
       </div>
       <text-main>
         <template #a>
-            <view4></view4>
+            <view5></view5>
         </template>
         <template #b>
-            <view-code :code="viewcode6"></view-code>
+            <view-code :code="viewcode7"></view-code>
         </template>
       </text-main>
+      
     </div>
   </div>
 </template>
