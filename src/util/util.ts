@@ -33,6 +33,11 @@ export default [
     {
         name:'1v-model',
         title:'v-model',
-        text:['v-model','指令','图片懒加载','分页','自定义hooks']
+        text:['v-model','指令','图片懒加载','分页','自定义hooks','hooks与指令的运用']
+    },
+    {
+        name:'2function',
+        title:'function',
+        text:['全局函数和变量']
     }
 ]

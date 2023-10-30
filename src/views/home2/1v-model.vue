@@ -12,6 +12,10 @@ import view4 from '@/views/home2/1v-model/1v-model-4.vue'
 import viewcode6 from '@/views/home2/1v-model/1v-model-4.vue?raw'
 import view5 from '@/views/home2/1v-model/1v-model-5.vue'
 import viewcode7 from '@/views/home2/1v-model/1v-model-5.vue?raw'
+import viewcode8 from '@/views/home2/1v-model/hooks.ts?raw'
+import view6 from '@/views/home2/1v-model/1v-model-6.vue'
+import viewcode9 from '@/views/home2/1v-model/1v-model-6.vue?raw'
+import viewcode10 from '@/views/home2/1v-model/hooks6.ts?raw'
 const data = ref({
 
 })
@@ -102,6 +106,21 @@ onMounted(() => {
         </template>
         <template #b>
             <view-code :code="viewcode7"></view-code>
+            <view-code :code="viewcode8"></view-code>
+        </template>
+      </text-main>
+
+      <text2-head text="hooks与指令的运用"></text2-head>
+      <div>
+        <span></span>
+      </div>
+      <text-main>
+        <template #a>
+            <view6></view6>
+        </template>
+        <template #b>
+            <view-code :code="viewcode9"></view-code>
+            <view-code :code="viewcode10"></view-code>
         </template>
       </text-main>
       

@@ -11,7 +11,7 @@ const data = ref({
     backgroundcolorisdark:'white',
     activeIndex: "1",
     numName: window.location.href.split('/')[window.location.href.split('/').length - 1].split('#')[0],
-    texts: [''],
+    texts: ['创建项目', 'v-text&v-title', 'v-once&v-memo', '生命周期','JSON字符串与对象之间的转换'],
     router: [{
         path: String(),
         name: String(),
