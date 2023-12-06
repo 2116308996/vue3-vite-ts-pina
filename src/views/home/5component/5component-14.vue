@@ -12,14 +12,10 @@ onMounted(() => {
             gsap.to(".boxcolor", {
                 duration: 0.5,
                 opacity: 0.5,
-                y: -100,
                 stagger: 0.1,
-                ease: "back.in",
-                onComplete: () => {
-                    gsap.to(".boxcolor", {
-                        y: 0,
-                    })
-                }
+                width: 100,
+                height: 100,
+                ease: "back.in"
             })
         })
     })
@@ -51,21 +47,35 @@ const leave = (el: any, done: any) => {
 const moveinout = () => {
 
     gsap.to('.boxcolor', {
-        rotation: 360,
-        duration: 1,
+        duration: 2,
         opacity: 1,
-        delay: 0.5,
-        stagger: 0.2,
-        ease: "sine.out",
-     
+        width: 150,
+        height: 150,
+        stagger:0.5,
+       // delay:1,
+        onComplete: () => {
+            gsap.to(".boxcolor", {
+                duration: 1,
+                opacity: 0.5,
+                width: 100,
+                height: 100,
+            })
+        }
     })
+
+    // gsap.from(".boxcolor", {
+    //             duration: 1,
+    //             opacity: 0.5,
+    //             width: 150,
+    //             height: 150,
+    //         })
 
 }
 </script>
 <template>
     <div>
         <el-button @click="moveinout">进入</el-button>
-        <div style="height: 120px;">
+        <div style="height: 150px;">
             <div class="boxcolor" style="background-color: red;"></div>
             <div class="boxcolor" style="background-color: blue;"></div>
             <div class="boxcolor" style="background-color: yellow;"></div>
