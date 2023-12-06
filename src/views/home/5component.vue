@@ -34,6 +34,8 @@ import view13 from '@/views/home/5component/5component-13.vue'
 import viewcode13 from '@/views/home/5component/5component-13.vue?raw'
 import viewcode13a from '@/views/home/5component/5component-13-1.vue?raw'
 import viewcode13b from '@/views/home/5component/5component-13-2.vue?raw'
+import view14 from '@/views/home/5component/5component-14.vue'
+import viewcode14 from '@/views/home/5component/5component-14.vue?raw'
 </script>
 <template>
   <div style="padding: 5px;" id="headbox">
@@ -181,6 +183,16 @@ import viewcode13b from '@/views/home/5component/5component-13-2.vue?raw'
         子组件B
         <view-code :code="viewcode13b"></view-code>
       </template>
+    </text-main>
+
+    <text2-head text="gasp使用"></text2-head>
+    <text-main>
+       <template #a>
+        <view14></view14>
+       </template>
+       <template #b>
+        <view-code :code="viewcode14"></view-code>
+       </template>
     </text-main>
   </div>
 </template>

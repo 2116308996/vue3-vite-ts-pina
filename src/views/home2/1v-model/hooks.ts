@@ -19,7 +19,7 @@ export default function(options:Options):Promise<{baseUrl:string}>{
             canvas.width=el.width
             canvas.height=el.height
             ctx?.drawImage(el,0,0,canvas.width,canvas.height)
-            return canvas.toDataURL('image/jpg')
+            return canvas.toDataURL('image/png')
           }
     })
  
