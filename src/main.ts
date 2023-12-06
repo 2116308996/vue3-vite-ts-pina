@@ -35,7 +35,13 @@ app.use(ElementPlus)
 app.use(createPinia())
 app.use(router.router)
 
-app.mount('#app')
 app.config.globalProperties.$ref=ref
 app.config.globalProperties.$onMounted=onMounted
 app.config.globalProperties.$Bus=Mit
+
+app.config.globalProperties.$func=()=>{
+    return "zhuhui"
+}
+
+app.mount('#app')
+
