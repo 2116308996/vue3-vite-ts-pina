@@ -6,6 +6,7 @@ import viewcode2 from '@/views/home2/1v-model/1v-model-1-1.vue?raw'
 import view2 from '@/views/home2/1v-model/1v-model-2.vue'
 import viewcode3 from '@/views/home2/1v-model/1v-model-2.vue?raw'
 import viewcode4 from '@/views/home2/1v-model/1v-model-2-1.vue?raw'
+import viewcode42 from '@/views/home2/1v-model/1v-model-2-2.vue?raw'
 import view3 from '@/views/home2/1v-model/1v-model-3.vue'
 import viewcode5 from '@/views/home2/1v-model/1v-model-3.vue?raw'
 import view4 from '@/views/home2/1v-model/1v-model-4.vue'
@@ -60,6 +61,7 @@ onMounted(() => {
             <view-code :code="viewcode3"></view-code>
             子组件
             <view-code :code="viewcode4"></view-code>
+            <view-code :code="viewcode42"></view-code>
         </template>
       </text-main>
 

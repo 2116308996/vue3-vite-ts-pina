@@ -12,11 +12,11 @@ const vMove = {
   created() {
 
   },
-  beforeMount() {
-
+  beforeMount(el:HTMLElement,dir:DirectiveBinding) {
+      console.log(el,dir)
   },
-  mounted(...e: any) {
-    //console.log(e)
+  mounted(...e: Array<any>) {
+    console.log(e)
     e[0].style.background = e[1].value.background
   },
   beforeUpdate() {
@@ -57,7 +57,7 @@ onMounted(() => {
   <div class="box2">
     <el-button @click="flag = !flag">切换</el-button>
     <el-button @click="movefun">打开拖拽</el-button>
-    <view1 v-move:aaa.bbb="{ background: 'red', flag: flag }"></view1>
+    <view1 v-if="flag" v-move:aaa.bbb="{ background: 'red'}"></view1>
     <view2 ref='child' v-movess></view2>
   </div>
 </template>
