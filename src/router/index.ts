@@ -3,10 +3,12 @@ import HomeView from '../views/HomeView.vue'
 import Home from '@/router/modules/home'
 import Home2 from '@/router/modules/home2'
 import Home3 from '@/router/modules/home3'
+import Home4 from '@/router/modules/home4'
 let asyncRoutes = [
   Home,
   Home2,
-  Home3
+  Home3,
+  Home4
 ]
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),

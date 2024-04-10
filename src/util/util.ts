@@ -42,7 +42,12 @@ export default [
     },
     {
         name:'home3/1ExcelToJson',
-        title:'ExcelToJson',
+        title:'ExcelToJson2',
         text:['ExcelToJson']
+    },
+    {
+        name:'home4/1threejs',
+        title:'Threejs',
+        text:['Threejs']
     }
 ]

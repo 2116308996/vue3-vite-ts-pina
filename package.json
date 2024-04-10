@@ -38,6 +38,7 @@
     "@types/jsdom": "^21.1.1",
     "@types/node": "^18.16.8",
     "@types/prismjs": "^1.26.0",
+    "@types/three": "^0.163.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "@vue/eslint-config-prettier": "^7.1.0",
