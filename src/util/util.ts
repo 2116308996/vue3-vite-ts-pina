@@ -39,5 +39,10 @@ export default [
         name:'2function',
         title:'function',
         text:['全局函数和变量']
+    },
+    {
+        name:'home3/1ExcelToJson',
+        title:'ExcelToJson',
+        text:['ExcelToJson']
     }
 ]
