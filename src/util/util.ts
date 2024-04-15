@@ -48,6 +48,6 @@ export default [
     {
         name:'home4/1threejs',
         title:'Threejs',
-        text:['Threejs']
+        text:['Threejs',"lil-gui","几何体之BufferGeometry","贴图与背景","加载gltf模型"]
     }
 ]
