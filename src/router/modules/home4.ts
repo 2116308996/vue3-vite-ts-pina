@@ -14,6 +14,14 @@ export default
             meta: {
                 title: '1threejs'
             }
+        },     
+        {
+            path: '/home4/2cesium',
+            name: 'home4/2cesium',
+            component: () => import('@/views/home4/2cesium.vue'),
+            meta: {
+                title: '2cesium'
+            }
         }
     ]
     }

@@ -71,7 +71,7 @@ const canvsfun = () => {
     scene.add(gridHelper)
     //导入轨道控制器
     const controls = new OrbitControls(camera, render.domElement)
-    const mapControls=new MapControls(camera,render.domElement)
+   // const mapControls=new MapControls(camera,render.domElement)
     //设置带阻尼的惯性
     controls.enableDamping = true;
     //创建雾
@@ -90,8 +90,8 @@ const canvsfun = () => {
     // })
     //渲染函数
     const animate = () => {
-        //controls.update()
-        mapControls.update()
+        controls.update()
+        //mapControls.update()
         //渲染
         render.render(scene, camera)
         requestAnimationFrame(animate);

@@ -6,6 +6,7 @@ import App from './App.vue'
 import router from './router'
 
 import TDesign from 'tdesign-vue-next';
+import * as Cesium from 'cesium'
 import 'tdesign-vue-next/es/style/index.css';
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
@@ -42,6 +43,7 @@ app.config.globalProperties.$Bus=Mit
 app.config.globalProperties.$func=()=>{
     return "zhuhui"
 }
-
+Cesium.Ion.defaultAccessToken='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZTgxYWNiMS00ODc3LTQ1ZWMtYTAzNC1hYmJhMjUxZjEyNmEiLCJpZCI6MjA4NjY4LCJpYXQiOjE3MTMxNDUzNzl9.WXdyvESJ0qZVUigsv46uc-Lbw7JAfTXwEiaW4gvMxyQ'
+// Cesium.Ion.defaultAccessToken='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NWMxYzE3ZC1kYjhmLTRjNzctYTljZS01ZGQxNGQzMTVmMTYiLCJpZCI6MjA4NjY4LCJpYXQiOjE3MTMxNDUyMTF9.tgUCDcte_MUd0dsjJQz8jKF2TjPoIkjwRXG0g9FzL-E'
 app.mount('#app')
 
