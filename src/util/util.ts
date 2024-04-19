@@ -48,11 +48,11 @@ export default [
     {
         name:'home4/1threejs',
         title:'Threejs',
-        text:['Threejs',"lil-gui","几何体之BufferGeometry","贴图与背景","加载gltf模型"]
+        text:['Threejs',"lil-gui","几何体之BufferGeometry","贴图与背景","加载gltf模型","光线投射"]
     },
     {
         name:"home4/2cesium",
         title:"Cesium",
-        text:['Cesium','Cesium与three']
+        text:['Cesium','Cesium与three',"Cesium与three","three-cesium"]
     }
 ]

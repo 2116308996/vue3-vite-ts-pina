@@ -11,6 +11,8 @@ import view4 from "@/views/home4/1threejs/1threejs-4.vue"
 import viewcode4 from "@/views/home4/1threejs/1threejs-4.vue?raw"
 import view5 from "@/views/home4/1threejs/1threejs-5.vue"
 import viewcode5 from "@/views/home4/1threejs/1threejs-5.vue?raw"
+import view6 from "@/views/home4/1threejs/1threejs-6.vue"
+import viewcode6 from "@/views/home4/1threejs/1threejs-6.vue?raw"
 const data = ref({
 
 })
@@ -94,6 +96,16 @@ onMounted(() => {
                 </template>
                 <template #b>
                     <view-code :code="viewcode5"></view-code>
+                </template>
+            </text-main>
+
+            <text2-head text="光线投射"></text2-head>
+            <text-main>
+                <template #a>
+                    <view6></view6>
+                </template>
+                <template #b>
+                    <view-code :code="viewcode6"></view-code>
                 </template>
             </text-main>
         </div>

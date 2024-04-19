@@ -12,6 +12,8 @@ import view2 from '@/views/home/1hello/1hello-2.vue'
     <div class="title">
       <p>vue3创建项目 vue creat projectname</p>
       <p>vue3创建vite项目 npm init vite@latest</p>
+	  <p>生成数据库迁移文件add-migration update20240419</p>
+	  <p>执行数据库迁移update-database</p>
     </div>
 
     <text2-head  text="v-text&v-title"></text2-head>
