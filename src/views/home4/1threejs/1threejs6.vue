@@ -2,7 +2,6 @@
 import { ref, isRef, shallowRef, onMounted } from 'vue'
 import * as THREE from 'three'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js"
-import { GUI } from "three/examples/jsm/libs/lil-gui.module.min.js"
 //导入tween
 import TWEEN from "three/examples/jsm/libs/tween.module.js"
 import gsap from 'gsap';
