@@ -99,7 +99,7 @@ onMounted(() => {
                 </template>
             </text-main>
 
-            <text2-head text="光线投射"></text2-head>
+            <text2-head text="光线投射和tween动画"></text2-head>
             <text-main>
                 <template #a>
                     <view6></view6>

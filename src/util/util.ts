@@ -23,7 +23,8 @@ export default [
         name: '5component',
         title:'组件',
         text: ['父子组件通信', '递归组件', '动态组件', '插槽', '异步组件','传送组件',
-        '缓存组件','transition动画组件','transtion-group','依赖注入provide/inject','兄弟组件传参&&Mitt'],
+        '缓存组件','transition动画组件','transtion-group','依赖注入provide/inject',
+        '兄弟组件传参&&Mitt',"gasp使用"],
     },
     {
         name:'6tsx',
@@ -48,7 +49,8 @@ export default [
     {
         name:'home4/1threejs',
         title:'Threejs',
-        text:['Threejs',"lil-gui","几何体之BufferGeometry","贴图与背景","加载gltf模型","光线投射"]
+        text:['Threejs',"lil-gui","几何体之BufferGeometry","贴图与背景",
+        "加载gltf模型","光线投射和tween动画"]
     },
     {
         name:"home4/2cesium",

@@ -3,7 +3,9 @@ import { ref, isRef, shallowRef, onMounted } from 'vue'
 import * as THREE from 'three'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js"
 import { GUI } from "three/examples/jsm/libs/lil-gui.module.min.js"
-
+//导入tween
+import TWEEN from "three/examples/jsm/libs/tween.module.js"
+import gsap from 'gsap';
 const data = ref({
 
 })
@@ -74,8 +76,17 @@ function threeAddBox() {
     cube3.position.set(0, 4, 2)
     group.add(cube3)
     three.scene.add(group)
+
+    const tween=new TWEEN.Tween(cube1.position)
+    tween.to({x:4},1000)
+    tween.start();
+
+    gsap.to(cube3.position,{
+        x:4
+    })
 }
 function animation() {
+    TWEEN.update();
     controls.update()
     three.render.render(three.scene, three.camera)
     requestAnimationFrame(animation)
