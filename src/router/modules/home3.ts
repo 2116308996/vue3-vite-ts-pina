@@ -14,6 +14,14 @@ export default
             meta: {
                 title: '1ExcelToJson'
             }
-        }
+        },
+		{
+		    path: '/home3/2Random',
+		    name: 'home3/2Random',
+		    component: () => import('@/views/home3/2Random.vue'),
+		    meta: {
+		        title: '2Random'
+		    }
+		}
     ]
     }

@@ -1,15 +1,25 @@
 <script setup lang='ts'>
 import { ref, isRef, shallowRef, onMounted } from 'vue'
 const props = defineProps({
+widthDefault:{
+	type: String,
+	default: 15
+},
   widthx: {
     type: String,
-    default: 0
+    default: 10
   },
   widthy: {
     type: String,
-    default: 100
+    default: 60
   }
 })
+const fun=()=>{
+	const moveElementa: HTMLElement = document.querySelector('#aaa') as HTMLElement
+	const moveElementb: HTMLElement = document.querySelector('#bbb') as HTMLElement
+    moveElementa.style.width=props.widthx +'%'
+    moveElementb.style.width='calc(100% - '+props.widthx+'% - 5px)'
+}
 const vMove = (...e: any) => {
   const moveElement = e[0]
   const moveElementa: HTMLElement = document.querySelector('#aaa') as HTMLElement
@@ -43,7 +53,7 @@ const vMove = (...e: any) => {
   moveElement.addEventListener('mousedown', mouseDown)
 }
 onMounted(() => {
-
+fun()
 })
 </script>
 <template>

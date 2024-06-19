@@ -46,6 +46,11 @@ export default [
         title:'ExcelToJson2',
         text:['ExcelToJson']
     },
+	{
+	    name:'home3/2Random',
+	    title:'Random',
+	    text:['Random']
+	},
     {
         name:'home4/1threejs',
         title:'Threejs',
