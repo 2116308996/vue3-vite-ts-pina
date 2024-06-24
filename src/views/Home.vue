@@ -3,8 +3,11 @@ import router from '@/router';
 import dark from '@/stores/dark'
 const darkstore = dark()
 import { onMounted, ref, computed } from 'vue';
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView,useRouter,useRoute } from 'vue-router'
 import util from '@/util/util';
+const router2=useRouter();
+const route=useRoute();
+console.log(router2,route)
 const data = ref({
     switch: false,
     colorisdark:'black',

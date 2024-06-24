@@ -34,7 +34,7 @@ export default [
     {
         name:'1v-model',
         title:'v-model',
-        text:['v-model','指令','图片懒加载','分页','自定义hooks','hooks与指令的运用']
+        text:['v-model','指令','图片懒加载','分页','自定义hooks','hooks与指令的运用','CSS去除元素点击时出现的小竖杠']
     },
     {
         name:'2function',

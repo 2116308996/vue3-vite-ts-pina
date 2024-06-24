@@ -45,5 +45,13 @@ app.config.globalProperties.$func=()=>{
 }
 Cesium.Ion.defaultAccessToken='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZTgxYWNiMS00ODc3LTQ1ZWMtYTAzNC1hYmJhMjUxZjEyNmEiLCJpZCI6MjA4NjY4LCJpYXQiOjE3MTMxNDUzNzl9.WXdyvESJ0qZVUigsv46uc-Lbw7JAfTXwEiaW4gvMxyQ'
 // Cesium.Ion.defaultAccessToken='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1NWMxYzE3ZC1kYjhmLTRjNzctYTljZS01ZGQxNGQzMTVmMTYiLCJpZCI6MjA4NjY4LCJpYXQiOjE3MTMxNDUyMTF9.tgUCDcte_MUd0dsjJQz8jKF2TjPoIkjwRXG0g9FzL-E'
+
+//全局注册异步组件
+// const modules=import.meta.glob("@/views/experimental/testdata/recode/tables/*.vue")
+// for(const item in modules){
+//     const reslut=item.match(/.*\/(.+).vue$/)
+//     app.component(reslut[1],defineAsyncComponent(()=>import(reslut[0])))
+// }
+
 app.mount('#app')
 
