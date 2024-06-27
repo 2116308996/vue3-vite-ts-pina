@@ -48,9 +48,10 @@ Cesium.Ion.defaultAccessToken='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJk
 
 //全局注册异步组件
 // const modules=import.meta.glob("@/views/experimental/testdata/recode/tables/*.vue")
+// console.log("modules",modules)
 // for(const item in modules){
 //     const reslut=item.match(/.*\/(.+).vue$/)
-//     app.component(reslut[1],defineAsyncComponent(()=>import(reslut[0])))
+//     app.component(reslut[1],defineAsyncComponent(modules[item]))
 // }
 
 app.mount('#app')

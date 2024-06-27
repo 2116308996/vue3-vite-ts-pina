@@ -58,10 +58,16 @@
 				A级综合概率：{{data.numavalue}}
 			</el-col>
 		</el-row>
+		<el-row>
+			<el-col :span="8">
+				<button @click="fun2('asd')">点击</button>
+			</el-col>
+		</el-row>
 	</div>
 </template>
 
 <script setup>
+import util from '@/util/index.ts'
 	const data=ref({
 		num:1000000,
 		s:0.008,
@@ -128,6 +134,13 @@
 		data.value.numsvalue=data.value.nums/data.value.num
 	}
 	fun()
+	const aaa=(vl)=>{
+		console.log(vl)
+	}
+    const fun2=util.useThrottle(aaa,2000);
+		// util.useThrottle(aaa,2000)();
+		// util.useDebounce(aaa,2000);
+	
 </script>
 
 <style lang="scss">
