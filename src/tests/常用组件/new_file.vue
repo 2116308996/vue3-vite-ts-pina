@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <el-scrollbar ref="scrollbarRef" height="400px" always @scroll="scroll">
     <div ref="innerRef">
       <p v-for="item in 20" :key="item" class="scrollbar-demo-item">
@@ -212,4 +212,4 @@ import {
   Search,
   Star,
 } from '@element-plus/icons-vue'
-</script>
+</script> -->
