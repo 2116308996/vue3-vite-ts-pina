@@ -61,5 +61,10 @@ export default [
         name:"home4/2cesium",
         title:"Cesium",
         text:['Cesium','Cesium与three',"Cesium与three","three-cesium"]
+    },
+    {
+        name:"home5/1react",
+        title:"React",
+        text:['1React']
     }
 ]
