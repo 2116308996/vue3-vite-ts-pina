@@ -1,9 +1,9 @@
-<script setup>
-import { ref, isRef, shallowRef, onMounted } from 'vue'
-import * as THREE from 'three'
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js"
+<script setup lang="ts">
+import { ref, isRef, shallowRef, onMounted } from 'vue';
+import * as THREE from 'three';
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 //导入tween
-import TWEEN from "three/examples/jsm/libs/tween.module.js"
+import TWEEN from "three/examples/jsm/libs/tween.module.js";
 import gsap from 'gsap';
 const data = ref({
 
@@ -13,7 +13,7 @@ let three = {
     camera: new THREE.PerspectiveCamera(),
     scene: new THREE.Scene()
 }
-let controls
+let controls:any=null;
 function initthree() {
     const canvss6 = document.getElementById("canvss6")
     three.render.setSize(canvss6?.clientWidth || 0, canvss6?.clientHeight || 0)
@@ -42,7 +42,7 @@ function initthree() {
         mouse.y = -((event.clientY - (rect?.top || 0)) / canvss6.clientHeight * 2) + 1
         raycaster.setFromCamera(mouse, three.camera)
         //计算物体和射线的焦点
-        const intersects = raycaster.intersectObjects(three.scene.children);
+        const intersects:any = raycaster.intersectObjects(three.scene.children);
         if (intersects[0].object.isselect) {
             intersects[0].object.isselect=false
             intersects[0].object.material.color.set(intersects[0].object.orcolor)

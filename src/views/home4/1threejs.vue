@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import router from '@/router'
+import router from '@/router/index'
 import { ref, isRef, shallowRef, onMounted } from 'vue'
 import view1 from "@/views/home4/1threejs/1threejs-1.vue"
 import viewcode1 from "@/views/home4/1threejs/1threejs-1.vue?raw"
@@ -11,8 +11,8 @@ import view4 from "@/views/home4/1threejs/1threejs-4.vue"
 import viewcode4 from "@/views/home4/1threejs/1threejs-4.vue?raw"
 import view5 from "@/views/home4/1threejs/1threejs-5.vue"
 import viewcode5 from "@/views/home4/1threejs/1threejs-5.vue?raw"
-import view6 from "@/views/home4/1threejs/1threejs6.vue"
-import viewcode6 from "@/views/home4/1threejs/1threejs6.vue?raw"
+import view6 from "@/views/home4/1threejs/1threejs-6.vue"
+import viewcode6 from "@/views/home4/1threejs/1threejs-6.vue?raw"
 const data = ref({
 
 })

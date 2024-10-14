@@ -4,8 +4,8 @@ import * as Three from "three";
 //轨道控制器
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js"
 import { GUI } from "three/examples/jsm/libs/lil-gui.module.min.js"
-import { FlyControls } from 'three/addons/controls/FlyControls.js';
-import { MapControls } from 'three/addons/controls/MapControls.js';
+// import { FlyControls } from 'three/addons/controls/FlyControls.js';
+// import { MapControls } from 'three/addons/controls/MapControls.js';
 //加载器
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js'
 import {RGBELoader} from 'three/examples/jsm/loaders/RGBELoader.js'
