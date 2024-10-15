@@ -1,9 +1,9 @@
 # vue3-vite-ts-pina
 
-
+```sh
 This template should help get you started developing with Vue 3 in Vite.
 vue3+ts+pinia+react学习
-
+```
 
 ## Recommended IDE Setup
 
