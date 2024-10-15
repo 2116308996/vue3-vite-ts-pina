@@ -3,7 +3,7 @@ import { mergeConfig } from 'vite'
 import { configDefaults, defineConfig } from 'vitest/config'
 import viteConfig from './vite.config'
 
-export default mergeConfig(
+export default mergeConfig<any,any>(
   viteConfig,
   defineConfig({
     test: {

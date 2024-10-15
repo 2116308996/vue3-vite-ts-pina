@@ -22,6 +22,8 @@ import Text1Head from '@/components/Form/Text1Head.vue'
 import Text2Head from '@/components/Form/Text2Head.vue'
 import TextMain from '@/components/Form/TextMain.vue'
 import ViewCode from '@/components/Form/ViewCode.vue';
+
+
 const app = createApp(App)
 
 
