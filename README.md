@@ -1,7 +1,7 @@
 # vue3-vite-ts-pina
 
-This template should help get you started developing with Vue 3 in Vite.
-
+This template should help get you started developing with Vue 3 in Vite.\n
+vue3+ts+pinia+react学习
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
@@ -37,6 +37,8 @@ npm run dev
 
 ```sh
 npm run build
+\n
+npm run only-build
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
