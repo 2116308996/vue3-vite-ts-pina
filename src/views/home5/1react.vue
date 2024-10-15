@@ -17,9 +17,10 @@ onMounted(() => {
         <div style="padding: 5px;">
             <text1-head :text="router.currentRoute.value.meta.title"></text1-head>
 
-            <text2-head text="React"></text2-head>
+            <text2-head text="1react"></text2-head>
             <div>
-                <span v-pre>1.插值语句 jsx tsx 使用{}, vue3中使用{{  }}</span>
+                <p v-pre>1.插值语句 jsx tsx 使用{} 展示 数字 字符串 数组 元素 三元表达式 API调用, vue3中使用{{  }}</p>
+                <p>2.插值语句显示对象,需要序列化JSON.stringify(obj)</p>
             </div>
             <text-main>
                 <template #a>
