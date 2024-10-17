@@ -65,6 +65,11 @@ export default [
     {
         name:"home5/1react",
         title:"React",
-        text:['1React']
+        text:['react','hooks','组件']
+    },
+    {
+        name:"home5/2jquery",
+        title:"jquery",
+        text:['方法','隐藏显示','动画','Callback和Chaning.html','获取','添加删除','遍历']
     }
 ]

@@ -18,5 +18,7 @@ function parentClickHandle(data:any){
   </div>
 </template>
 <style scoped lang='less'>
-
+.aaa{
+  background-color: red;
+}
 </style>

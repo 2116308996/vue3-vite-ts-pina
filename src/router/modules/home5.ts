@@ -14,6 +14,14 @@ export default
             meta: {
                 title: 'React'
             }
+        },
+        {
+            path: '/home5/2jquery',
+            name: 'home5/2jquery',
+            component: () => import('@/views/home5/2jquery.vue'),
+            meta: {
+                title: 'jquery'
+            }
         }
     ]
     }
