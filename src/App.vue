@@ -29,9 +29,9 @@ import Home from './views/Home.vue';
 </template>
 
 <style scoped>
-body{
+/* body{
   display: none !important;
-}
+} */
 /* header {
   line-height: 1.5;
   max-height: 100vh;

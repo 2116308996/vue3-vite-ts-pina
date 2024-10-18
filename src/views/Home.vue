@@ -84,7 +84,7 @@ onMounted(() => {
 })
 </script>
 <template>
-    <div style="width: 100%;margin-top: 8px;" :class="isdark()">
+    <div style="width: 100%;" :class="isdark()">
         <el-row>
             <div class="box left">
                 <div style="display: flex;justify-content: center;">
