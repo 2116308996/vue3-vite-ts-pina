@@ -71,5 +71,15 @@ export default [
         name:"home5/2jquery",
         title:"jquery",
         text:['方法','隐藏显示','动画','Callback和Chaning.html','获取','添加删除','遍历']
+    },
+    {
+        name:"home5/3qrcode",
+        title:"qrcode",
+        text:['文本二维码','扫描后进入加载网站页面二维码']
+    },
+    {
+        name:"home5/4unocss",
+        title:"unocss",
+        text:['unoCss','tailwindcss']
     }
 ]

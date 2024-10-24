@@ -4,6 +4,7 @@ import { createApp,ref,onMounted } from 'vue'
 import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
+import 'uno.css'
 
 import TDesign from 'tdesign-vue-next';
 import * as Cesium from 'cesium'
@@ -33,10 +34,10 @@ app.component('Text2Head',Text2Head)
 app.component('TextMain',TextMain)
 app.component('ViewCode',ViewCode)
 
-app.use(TDesign);
-app.use(ElementPlus)
+app.use(TDesign as any);
+app.use(ElementPlus as any)
 app.use(createPinia())
-app.use(router.router)
+app.use(router.router as any)
 
 app.config.globalProperties.$ref=ref
 app.config.globalProperties.$onMounted=onMounted

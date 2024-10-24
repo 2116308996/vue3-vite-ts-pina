@@ -22,6 +22,22 @@ export default
             meta: {
                 title: 'jquery'
             }
+        },
+        {
+            path: '/home5/3qrcode',
+            name: 'home5/3qrcode',
+            component: () => import('@/views/home5/3qrcode.vue'),
+            meta: {
+                title: 'QRCode'
+            }
+        },
+        {
+            path: '/home5/4unocss',
+            name: 'home5/4unocss',
+            component: () => import('@/views/home5/4unocss.vue'),
+            meta: {
+                title: 'unoCss'
+            }
         }
     ]
     }

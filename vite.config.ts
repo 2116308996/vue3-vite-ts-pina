@@ -5,9 +5,12 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import AutoImport from 'unplugin-auto-import/vite'
 import Cesium from 'vite-plugin-cesium'
+import unoCss from 'unocss/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),Cesium(), vueJsx(),AutoImport({
+  plugins: [vue(),Cesium(), vueJsx(),
+  unoCss(),
+  AutoImport({
     imports:['vue'],
     dts:'src/auto-import.d.ts'
   }),
