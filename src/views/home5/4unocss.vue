@@ -32,6 +32,7 @@ onMounted(() => {
 
             <text2-head text="tailwindcss"></text2-head>
             <p>配置好预设后，可以直接使用tailwindcss的预设</p>
+            <a href="https://www.tailwindcss.cn/docs/width" target="_blank">tailwindcss库</a>
             <div>
             </div>
             <text-main>
