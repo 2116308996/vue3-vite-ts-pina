@@ -81,5 +81,10 @@ export default [
         name:"home5/4unocss",
         title:"unocss",
         text:['unoCss','tailwindcss']
+    },
+    {
+        name:"home5/4TypeScript",
+        title:"TypeScript",
+        text:['数据类型']
     }
 ]

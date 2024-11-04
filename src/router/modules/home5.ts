@@ -38,6 +38,14 @@ export default
             meta: {
                 title: 'unoCss'
             }
+        },
+        {
+            path: '/home5/5TypeScript',
+            name: 'home5/5TypeScript',
+            component: () => import('@/views/home5/5TypeScript.vue'),
+            meta: {
+                title: 'TypeScript'
+            }
         }
     ]
     }
