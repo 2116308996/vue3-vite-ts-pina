@@ -85,6 +85,6 @@ export default [
     {
         name:"home5/4TypeScript",
         title:"TypeScript",
-        text:['数据类型']
+        text:['数据类型','联合类型|类型断言|交叉类型','内置对象&代码雨']
     }
 ]

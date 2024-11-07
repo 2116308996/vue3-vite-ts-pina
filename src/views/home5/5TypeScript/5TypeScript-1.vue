@@ -106,13 +106,54 @@ function fun(...args:any[]){
    console.log(args,arguments)
    let  a:IArguments=arguments
 }
+function add(a:number=10,b?:number):number{
+    if(b){
+        return a+b
+    }else{
+        return a
+    }
+}
+const add2=(a:number=10,b?:number):number=>b?a+b:a
+interface User{
+    name:string
+    user:number
+}
+function getName(user:User):User{
+  return user
+}
+interface Obj{
+    num:number[]
+    add:(this:Obj,num:number)=>void
+}
+let obj10:Obj={
+    num:[1,2,3],
+    add(this:Obj,num:number){
+        this.num.push(num)
+    }
+}
+function findNum(add:number[]):number[]//如果传的是数组，就做添加
+function findNum(id:number):number[] //如果传入了id就是单个查询
+function findNum():number[]//如果没有传入，就是查询全部
+function findNum(ids?:number|number[]):number[]{
+    if(typeof ids=='number'){
+      return obj10.num.filter(v=>v==ids)   
+    }else if(Array.isArray(ids)){
+        obj10.num.push(...ids)
+        return obj10.num
+    }else{
+        return obj10.num
+    }
+}
 onMounted(() => {
-
+  
 })
 </script>
 <template>
   <div class="flex red m-5">
     123
+  </div>
+  <div>
+    {{ add2(10,1) }}
   </div>
 </template>
 <style scoped lang='less'>
