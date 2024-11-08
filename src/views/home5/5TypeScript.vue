@@ -8,6 +8,12 @@ import view2 from './5TypeScript/5TypeScript-2.vue'
 import viewcode2 from './5TypeScript/5TypeScript-2.vue?raw';
 import view3 from './5TypeScript/5TypeScript-3.vue'
 import viewcode3 from './5TypeScript/5TypeScript-3.vue?raw';
+import view4 from './5TypeScript/5TypeScript-4.vue'
+import viewcode4 from './5TypeScript/5TypeScript-4.vue?raw';
+import view5 from './5TypeScript/5TypeScript-5.vue'
+import viewcode5 from './5TypeScript/5TypeScript-5.vue?raw';
+import view6 from './5TypeScript/5TypeScript-6.vue'
+import viewcode6 from './5TypeScript/5TypeScript-6.vue?raw';
 const data = ref({
     
 })
@@ -53,6 +59,42 @@ onMounted(() => {
                 </template>
                 <template #b>
                     <view-code :code="viewcode3"></view-code>
+                </template>
+            </text-main>
+
+            <text2-head text="Class和抽象类"></text2-head>
+            <div>
+            </div>
+            <text-main>
+                <template #a>
+                    <view4></view4>
+                </template>
+                <template #b>
+                    <view-code :code="viewcode4"></view-code>
+                </template>
+            </text-main>
+
+            <text2-head text="元组类型和枚举类型"></text2-head>
+            <div>
+            </div>
+            <text-main>
+                <template #a>
+                    <view5></view5>
+                </template>
+                <template #b>
+                    <view-code :code="viewcode5"></view-code>
+                </template>
+            </text-main>
+
+            <text2-head text="类型推论和类型别名"></text2-head>
+            <div>
+            </div>
+            <text-main>
+                <template #a>
+                    <view6></view6>
+                </template>
+                <template #b>
+                    <view-code :code="viewcode6"></view-code>
                 </template>
             </text-main>
         </div>
