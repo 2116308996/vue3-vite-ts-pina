@@ -86,7 +86,7 @@ export default [
         name:"home5/5TypeScript",
         title:"TypeScript",
         text:['数据类型','联合类型|类型断言|交叉类型','内置对象&代码雨','Class和抽象类',
-            '元组类型和枚举类型','类型推论和类型别名'
+            '元组类型和枚举类型','类型推论和类型别名和never类型'
         ]
     }
 ]

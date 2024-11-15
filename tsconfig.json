@@ -10,5 +10,6 @@
     {
       "path": "./tsconfig.vitest.json"
     }
-  ]
+  ],
+  //"strict":false  ts是否严格检测
 }

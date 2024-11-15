@@ -76,7 +76,7 @@ class Ref2{
 }
 let b=new Ref2('zhuhui')
 
-//abstract 定义抽象类
+//abstract 定义抽象类  只能描述,不能创建抽象类的实例,可以被继承
 abstract class Person{
     name:string
     constructor(name?:string){
@@ -92,8 +92,8 @@ class People extends Person{
     constructor(){
         super()
     }
-    init(name: string): void {1
-        
+    init(name: string): void {
+        console.log("init",name)
     }
     setName(name:string){
         this.name=name
@@ -101,7 +101,7 @@ class People extends Person{
 }
 let people=new People()
 people.setName("zhuhuipeople")
-console.log(people.getName())
+console.log(people.init("name"),people.getName())
 onMounted(() => {
     let a=new Vue({
         el: "#myApp"

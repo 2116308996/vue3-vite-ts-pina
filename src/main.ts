@@ -29,6 +29,7 @@ const app = createApp(App)
 
 
 
+
 app.component('Text1Head',Text1Head)
 app.component('Text2Head',Text2Head)
 app.component('TextMain',TextMain)

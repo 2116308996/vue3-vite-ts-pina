@@ -14,6 +14,12 @@ import view5 from './5TypeScript/5TypeScript-5.vue'
 import viewcode5 from './5TypeScript/5TypeScript-5.vue?raw';
 import view6 from './5TypeScript/5TypeScript-6.vue'
 import viewcode6 from './5TypeScript/5TypeScript-6.vue?raw';
+import view7 from './5TypeScript/5TypeScript-7.vue'
+import viewcode7 from './5TypeScript/5TypeScript-7.vue?raw';
+import view8 from './5TypeScript/5TypeScript-8.vue'
+import viewcode8 from './5TypeScript/5TypeScript-8.vue?raw';
+import view9 from './5TypeScript/5TypeScript-9.vue'
+import viewcode9 from './5TypeScript/5TypeScript-9.vue?raw';
 const data = ref({
     
 })
@@ -86,7 +92,7 @@ onMounted(() => {
                 </template>
             </text-main>
 
-            <text2-head text="类型推论和类型别名"></text2-head>
+            <text2-head text="类型推论和类型别名和never类型"></text2-head>
             <div>
             </div>
             <text-main>
@@ -95,6 +101,42 @@ onMounted(() => {
                 </template>
                 <template #b>
                     <view-code :code="viewcode6"></view-code>
+                </template>
+            </text-main>
+
+            <text2-head text="类型推论和类型别名和never类型"></text2-head>
+            <div>
+            </div>
+            <text-main>
+                <template #a>
+                    <view7></view7>
+                </template>
+                <template #b>
+                    <view-code :code="viewcode7"></view-code>
+                </template>
+            </text-main>
+
+            <text2-head text="类型推论和类型别名和never类型"></text2-head>
+            <div>
+            </div>
+            <text-main>
+                <template #a>
+                    <view8></view8>
+                </template>
+                <template #b>
+                    <view-code :code="viewcode8"></view-code>
+                </template>
+            </text-main>
+
+            <text2-head text="类型推论和类型别名和never类型"></text2-head>
+            <div>
+            </div>
+            <text-main>
+                <template #a>
+                    <view9></view9>
+                </template>
+                <template #b>
+                    <view-code :code="viewcode9"></view-code>
                 </template>
             </text-main>
         </div>
