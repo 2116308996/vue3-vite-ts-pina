@@ -18,7 +18,7 @@ function xm():never{
   throw new Error("错误")
 }
 onMounted(() => {
-xm()
+//xm()
 })
 </script>
 <template>

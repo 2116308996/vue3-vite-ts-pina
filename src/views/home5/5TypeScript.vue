@@ -104,7 +104,7 @@ onMounted(() => {
                 </template>
             </text-main>
 
-            <text2-head text="类型推论和类型别名和never类型"></text2-head>
+            <text2-head text="symbol类型|迭代器|生成器"></text2-head>
             <div>
             </div>
             <text-main>
@@ -116,7 +116,7 @@ onMounted(() => {
                 </template>
             </text-main>
 
-            <text2-head text="类型推论和类型别名和never类型"></text2-head>
+            <text2-head text="泛型&泛型约束typeof"></text2-head>
             <div>
             </div>
             <text-main>
@@ -128,7 +128,7 @@ onMounted(() => {
                 </template>
             </text-main>
 
-            <text2-head text="类型推论和类型别名和never类型"></text2-head>
+            <text2-head text="泛型&泛型约束typeof','tsconfig.json配置文件"></text2-head>
             <div>
             </div>
             <text-main>
