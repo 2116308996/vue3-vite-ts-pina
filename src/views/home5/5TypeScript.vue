@@ -128,7 +128,7 @@ onMounted(() => {
                 </template>
             </text-main>
 
-            <text2-head text="泛型&泛型约束typeof','tsconfig.json配置文件"></text2-head>
+            <text2-head text="tsconfig.json配置文件"></text2-head>
             <div>
             </div>
             <text-main>
